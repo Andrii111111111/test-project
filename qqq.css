@@ -31,7 +31,7 @@
 }
 
 .current-recipe-name-tablet {
-    color: #050505;
+    color: var(--colorTextDark);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -63,7 +63,7 @@
 
 .current-rating,
 .current-cucing-time {
-    color: rgba(5, 5, 5, 0.50);
+    color: var(--colorTextGray);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -86,7 +86,7 @@
 }
 
 .current-ingredients-name {
-    color: #050505;
+    color: var(--colorTextDark);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -95,7 +95,7 @@
 }
 
 .current-ingredients-quantity {
-    color: rgba(5, 5, 5, 0.50);
+    color: var(--colorTextGray);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -105,7 +105,7 @@
 
 .current-type-item {
     border-radius: 35px;
-    border: 1px solid rgba(5, 5, 5, 0.20);
+    border: 1px solid var(--colorBorder);
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@
 }
 
 .type-item-text {
-    color: #050505;
+    color: var(--colorTextDark);
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
@@ -181,7 +181,7 @@
 
 .current-vrapper {
     border-radius: 15px;
-    background: #FFF;
+    background: var(--white);
     padding-bottom: 40px;
     padding-top: 40px;
     position: relative;
@@ -194,12 +194,15 @@
     }
 }
 
-
 .border::after {
     content: '';
     position: absolute;
     width: 100%;
-    border: 0.5px solid black;
+    border: 0.5px solid var(--black);
     opacity: 0.1;
     top: 20px;
+}
+
+.close-window {
+    stroke: var(--colorTextDark);
 }
